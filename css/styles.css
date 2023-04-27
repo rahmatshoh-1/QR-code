@@ -1,0 +1,58 @@
+/* main style guide  */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 375px;
+    margin: 10%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+h1{
+    font-size: 30px;
+    margin: 24px 0;
+    color: var(--dark-blue);
+}
+p{
+    color: var(--grayish-blue);
+    font-size: 20px;
+    margin: 0 20px 30px;
+}
+
+
+@media screen and (max-width:375px) {
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+        margin: 0 0px 20px;
+    }
+
+}
